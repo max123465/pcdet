@@ -1,0 +1,8 @@
+prefix=/home/max/pcdet_ws/devel
+
+Name: openpcdet
+Description: Description of openpcdet
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

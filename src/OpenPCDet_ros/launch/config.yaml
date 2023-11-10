@@ -1,0 +1,19 @@
+# which go to the model you want to use
+cfg_root: "/home/max/pcdet_ws/src/OpenPCDet/tools/cfgs/kitti_models/second_iou.yaml"
+
+# which go to the .pth
+model_path: "/home/max/pcdet_ws/src/OpenPCDet/tools/models/kitti/second_iou7909.pth"
+
+# pointcloud_topic in the bag if you are not sure
+# rosbag info xxx.bag check the topic name
+pointcloud_topic: "/ouster/points" 
+#"/kitti/velo/pointcloud" # default is from kitti2bag: /velodyne_points
+
+# only the predict probablity over this threshold will be draw a box
+threshold: 0.1
+
+move_lidar_center: 20
+viz_rate: 1.0
+# IF _BASE_CONFIG_ error:
+# Change the _BASE_CONFIG_ path to absolute in $MODEL_NAME$.yaml
+
